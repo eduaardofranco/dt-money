@@ -13,7 +13,7 @@ export const TransactionsContainer = styled.div`
 export const TransactionsTable = styled.table`
     border-collapse: separate;
     border-spacing: 0 .8rem;
-    /* margin-top: 2.4rem; */
+    margin-top: 2.4rem;
     width: 100%;
     td {
         padding: 2rem 3.2rem;
