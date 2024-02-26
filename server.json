@@ -5,7 +5,7 @@
             "description": "Burger",
             "type": "outcome",
             "price": 20,
-            "category": "food",
+            "category": "Food",
             "createdAt": "2024-02-26T12:59:27.869Z"
         },
         {
@@ -13,7 +13,7 @@
             "description": "Sallary",
             "type": "income",
             "price": 2000,
-            "category": "wages",
+            "category": "Wages",
             "createdAt": "2024-02-26T12:59:23.869Z"
         },
         {
@@ -21,7 +21,7 @@
             "description": "Gym",
             "type": "outcome",
             "price": 100,
-            "category": "health",
+            "category": "Health",
             "createdAt": "2024-02-26T12:59:11.869Z"
         },
         {
@@ -29,7 +29,7 @@
             "description": "Tesco Supermarket",
             "type": "outcome",
             "price": 45.5,
-            "category": "food",
+            "category": "Food",
             "createdAt": "2024-02-26T12:59:22.869Z"
         },
         {
@@ -37,8 +37,40 @@
             "description": "Bus",
             "type": "outcome",
             "price": 2,
-            "category": "transport",
+            "category": "Transport",
             "createdAt": "2024-02-26T12:59:44.869Z"
+        },
+        {
+            "id": 6,
+            "description": "RANI3 Dividends",
+            "type": "income",
+            "price": 345.89,
+            "category": "Investiments",
+            "createdAt": "2024-02-26T12:20:44.869Z"
+        },
+        {
+            "id": 7,
+            "description": "Youtube payment",
+            "type": "income",
+            "price": 72.80,
+            "category": "Youtube",
+            "createdAt": "2024-02-26T12:59:34.869Z"
+        },
+        {
+            "id": 8,
+            "description": "BBASE3 Dividends",
+            "type": "income",
+            "price": 815.90,
+            "category": "Investiments",
+            "createdAt": "2024-02-26T12:19:44.869Z"
+        },
+        {
+            "id": 9,
+            "description": "Monthly Rent",
+            "type": "outcome",
+            "price": 505,
+            "category": "Rent",
+            "createdAt": "2024-02-26T12:28:44.869Z"
         }
     ]
 }
