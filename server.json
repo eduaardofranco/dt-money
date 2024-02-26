@@ -1,0 +1,44 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "description": "Burger",
+            "type": "outcome",
+            "price": 20,
+            "category": "food",
+            "createdAt": "2024-02-26T12:59:27.869Z"
+        },
+        {
+            "id": 2,
+            "description": "Sallary",
+            "type": "income",
+            "price": 2000,
+            "category": "wages",
+            "createdAt": "2024-02-26T12:59:23.869Z"
+        },
+        {
+            "id": 3,
+            "description": "Gym",
+            "type": "outcome",
+            "price": 100,
+            "category": "health",
+            "createdAt": "2024-02-26T12:59:11.869Z"
+        },
+        {
+            "id": 4,
+            "description": "Tesco Supermarket",
+            "type": "outcome",
+            "price": 45.5,
+            "category": "food",
+            "createdAt": "2024-02-26T12:59:22.869Z"
+        },
+        {
+            "id": 5,
+            "description": "Bus",
+            "type": "outcome",
+            "price": 2,
+            "category": "transport",
+            "createdAt": "2024-02-26T12:59:44.869Z"
+        }
+    ]
+}
