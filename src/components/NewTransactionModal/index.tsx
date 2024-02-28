@@ -2,13 +2,13 @@ import * as Dialog from '@radix-ui/react-dialog'
 import { CloseButton, Content, Overlay, TransactionType, TransactionTypeButton } from './styles'
 import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 import * as z from 'zod'
-import { useForm } from 'react-hook-form'
+import { Controller, useForm } from 'react-hook-form'
 
 const newTransactionSchema = z.object({
     description: z.string(),
     price: z.number(),
     category: z.string(),
-    type: z.enum(['income', 'outcome'])
+    type: z.enum(['income', 'outcome']),
 })
 
 type NewTransactionFomrInputs = z.infer<typeof newTransactionSchema>
@@ -16,10 +16,13 @@ type NewTransactionFomrInputs = z.infer<typeof newTransactionSchema>
 export function NewTransactionModal() {
 
     const { register,
+            control,
             handleSubmit,
             formState: { isSubmitting }
     } = useForm<NewTransactionFomrInputs>({
-
+        defaultValues: {
+            type: 'income'
+        }
     })
 
     async function handleCreateNewTransaction(data: NewTransactionFomrInputs) {
@@ -59,16 +62,24 @@ export function NewTransactionModal() {
                         required
                         {...register('category')}
                     />
-                    <TransactionType>
-                        <TransactionTypeButton variant="income" value="income">
-                            <ArrowCircleUp size={32} />
-                                Income
-                        </TransactionTypeButton>
-                        <TransactionTypeButton variant="outcome" value="outcome">
-                            <ArrowCircleDown size={32} />
-                                Outcome
-                        </TransactionTypeButton>
-                    </TransactionType>
+                    <Controller
+                        control={control}
+                        name="type"
+                        render={({ field }) => {
+                            return (
+                                <TransactionType onValueChange={field.onChange} value={field.value}>
+                                    <TransactionTypeButton variant="income" value="income">
+                                        <ArrowCircleUp size={32} />
+                                            Income
+                                    </TransactionTypeButton>
+                                    <TransactionTypeButton variant="outcome" value="outcome">
+                                        <ArrowCircleDown size={32} />
+                                            Outcome
+                                    </TransactionTypeButton>
+                                </TransactionType>
+                            )
+                        }}
+                    />
 
                     <button type="submit" disabled={isSubmitting}>Register</button>
                 </form>
