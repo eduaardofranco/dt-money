@@ -1,76 +1,84 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "description": "Burger",
-            "type": "outcome",
-            "price": 20,
-            "category": "Food",
-            "createdAt": "2024-02-26T12:59:27.869Z"
-        },
-        {
-            "id": 2,
-            "description": "Sallary",
-            "type": "income",
-            "price": 2000,
-            "category": "Wages",
-            "createdAt": "2024-02-26T12:59:23.869Z"
-        },
-        {
-            "id": 3,
-            "description": "Gym",
-            "type": "outcome",
-            "price": 100,
-            "category": "Health",
-            "createdAt": "2024-02-26T12:59:11.869Z"
-        },
-        {
-            "id": 4,
-            "description": "Tesco Supermarket",
-            "type": "outcome",
-            "price": 45.5,
-            "category": "Food",
-            "createdAt": "2024-02-26T12:59:22.869Z"
-        },
-        {
-            "id": 5,
-            "description": "Bus",
-            "type": "outcome",
-            "price": 2,
-            "category": "Transport",
-            "createdAt": "2024-02-26T12:59:44.869Z"
-        },
-        {
-            "id": 6,
-            "description": "RANI3 Dividends",
-            "type": "income",
-            "price": 345.89,
-            "category": "Investiments",
-            "createdAt": "2024-02-26T12:20:44.869Z"
-        },
-        {
-            "id": 7,
-            "description": "Youtube payment",
-            "type": "income",
-            "price": 72.80,
-            "category": "Youtube",
-            "createdAt": "2024-02-26T12:59:34.869Z"
-        },
-        {
-            "id": 8,
-            "description": "BBASE3 Dividends",
-            "type": "income",
-            "price": 815.90,
-            "category": "Investiments",
-            "createdAt": "2024-02-26T12:19:44.869Z"
-        },
-        {
-            "id": 9,
-            "description": "Monthly Rent",
-            "type": "outcome",
-            "price": 505,
-            "category": "Rent",
-            "createdAt": "2024-02-26T12:28:44.869Z"
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Burger",
+      "type": "outcome",
+      "price": 20,
+      "category": "Food",
+      "createdAt": "2024-02-26T12:59:27.869Z"
+    },
+    {
+      "id": 2,
+      "description": "Sallary",
+      "type": "income",
+      "price": 2000,
+      "category": "Wages",
+      "createdAt": "2024-02-26T12:59:23.869Z"
+    },
+    {
+      "id": 3,
+      "description": "Gym",
+      "type": "outcome",
+      "price": 100,
+      "category": "Health",
+      "createdAt": "2024-02-26T12:59:11.869Z"
+    },
+    {
+      "id": 4,
+      "description": "Tesco Supermarket",
+      "type": "outcome",
+      "price": 45.5,
+      "category": "Food",
+      "createdAt": "2024-02-26T12:59:22.869Z"
+    },
+    {
+      "id": 5,
+      "description": "Bus",
+      "type": "outcome",
+      "price": 2,
+      "category": "Transport",
+      "createdAt": "2024-02-26T12:59:44.869Z"
+    },
+    {
+      "id": 6,
+      "description": "RANI3 Dividends",
+      "type": "income",
+      "price": 345.89,
+      "category": "Investiments",
+      "createdAt": "2024-02-26T12:20:44.869Z"
+    },
+    {
+      "id": 7,
+      "description": "Youtube payment",
+      "type": "income",
+      "price": 72.8,
+      "category": "Youtube",
+      "createdAt": "2024-02-26T12:59:34.869Z"
+    },
+    {
+      "id": 8,
+      "description": "BBASE3 Dividends",
+      "type": "income",
+      "price": 815.9,
+      "category": "Investiments",
+      "createdAt": "2024-02-26T12:19:44.869Z"
+    },
+    {
+      "id": 9,
+      "description": "Monthly Rent",
+      "type": "outcome",
+      "price": 505,
+      "category": "Rent",
+      "createdAt": "2024-02-26T12:28:44.869Z"
+    },
+    {
+      "description": "Padthai",
+      "category": "food",
+      "price": 14,
+      "type": "outcome",
+      "createdAt": "2024-03-01T19:33:03.342Z",
+      "id": 10
+    }
+  ]
 }
