@@ -3,7 +3,8 @@ import { CloseButton, Content, Overlay, TransactionType, TransactionTypeButton }
 import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 import * as z from 'zod'
 import { Controller, useForm } from 'react-hook-form'
-import { api } from '../../lib/axios'
+import { useContext } from 'react'
+import { TransactionContext } from '../../contexts/TransactionsContext'
 
 const newTransactionSchema = z.object({
     description: z.string(),
@@ -16,9 +17,12 @@ type NewTransactionFomrInputs = z.infer<typeof newTransactionSchema>
 
 export function NewTransactionModal() {
 
+    const { createTransaction } = useContext(TransactionContext)
+    
     const { register,
             control,
             handleSubmit,
+            reset,
             formState: { isSubmitting }
     } = useForm<NewTransactionFomrInputs>({
         defaultValues: {
@@ -29,13 +33,14 @@ export function NewTransactionModal() {
     async function handleCreateNewTransaction(data: NewTransactionFomrInputs) {
         const { category, description, price, type } = data
 
-        await api.post('transactions', {
+        await createTransaction({
             description,
             category,
             price,
-            type,
-            createdAt: new Date()
+            type
         })
+        
+        reset()
     }
 
     return(
