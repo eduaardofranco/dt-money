@@ -22,7 +22,8 @@ const newTransactionSchema = z.object({
 type NewTransactionFomrInputs = z.infer<typeof newTransactionSchema>
 
 export function NewTransactionModal() {
-  const { createTransaction } = useContext(TransactionContext)
+
+  const { createTransaction, setModalNewTransactionOpen } = useContext(TransactionContext)
 
   const {
     register,
@@ -57,7 +58,7 @@ export function NewTransactionModal() {
       <Content>
         <Dialog.Title>New Transaction</Dialog.Title>
 
-        <CloseButton>
+        <CloseButton onClick={() => setModalNewTransactionOpen(false)}>
           <X />
         </CloseButton>
 
@@ -101,10 +102,9 @@ export function NewTransactionModal() {
               )
             }}
           />
-
-          <button type="submit" disabled={isSubmitting}>
-            Register
-          </button>
+            <button type="submit" disabled={isSubmitting}>
+              Register
+            </button>
         </form>
       </Content>
     </Dialog.DialogPortal>
