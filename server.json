@@ -119,6 +119,14 @@
       "type": "outcome",
       "createdAt": "2024-03-02T18:44:51.551Z",
       "id": 15
+    },
+    {
+      "description": "Tips",
+      "category": "wages",
+      "price": 60,
+      "type": "income",
+      "createdAt": "2024-03-02T19:03:43.708Z",
+      "id": 16
     }
   ]
 }
